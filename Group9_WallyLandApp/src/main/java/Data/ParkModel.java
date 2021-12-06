@@ -31,6 +31,7 @@ public class ParkModel {
             String st;
             while ((st = br.readLine()) != null) {
                 String[] line = st.split(", ");
+                displayList.add(line);
 
                          
             }
