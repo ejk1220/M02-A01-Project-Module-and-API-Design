@@ -20,6 +20,11 @@ public class Map {
         TODO: 
         Implement settting functionality 
         Define Icon object 
+        Is this where action listener functionality can be implemented? 
+        Map properties need to be a 4 by 4 grid with maybe an image for each
+        Each grid needs a seperate name and when clicked takes the user to another JFrame 
+        This new JFrame will show the user the park section information and attractions 
+        THIS CLASS SHOULD PRODUCE THE MAP ITSELF 
         */
         title = "WallyLand";
         subSections.add("Section1");

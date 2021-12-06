@@ -1,4 +1,5 @@
-
+//THis should produce each seperate park frame 
+// Try to use the fishing project/other last year projects as a comp 
 package LocationServices;
 
 import java.awt.event.ActionEvent;

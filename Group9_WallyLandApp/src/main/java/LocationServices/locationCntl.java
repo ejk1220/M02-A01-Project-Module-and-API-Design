@@ -1,3 +1,5 @@
+//THis controller should let you toggle view between each map section frame 
+//For example, after clicking on park section 1 you need a go back button and that will let you go back to the map 
 
 package LocationServices;
 
@@ -14,12 +16,12 @@ import javax.swing.JTextField;
 
 public class locationCntl {
     private final locationUI LocationUI;
-    private final Directions Directions;
+    
     
     
     public locationCntl() {
         LocationUI = new locationUI(this);
-        Directions = new Directions();
+        
     }
     
     
