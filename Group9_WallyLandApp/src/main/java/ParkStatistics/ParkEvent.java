@@ -14,7 +14,7 @@ public class ParkEvent {
 
     private static final String String = null;
     private static final LocalDate LocalDate = null;
-
+    
     public static void main ( String[] args ) {
         ParkEvent app = new ParkEvent(String, LocalDate, LocalDate);
         app.eventList();
@@ -64,4 +64,4 @@ public class ParkEvent {
         }
 
     
-}//end class ParkEvent
+}

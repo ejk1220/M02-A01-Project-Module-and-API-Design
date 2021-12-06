@@ -21,8 +21,10 @@ public class FindLocation {
      
     public static void main(String[] args) {
         //HOW DO I GET THIS TO DISPLAY!!!!!!!!!!!!
+        
         SwingUtilities.invokeLater(() -> { 
             locationCntl cntl = new locationCntl(); // Instantiating the controller is neccesary 
         });
+
     }
 }

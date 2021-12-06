@@ -15,6 +15,8 @@ public class Map {
     
     public JFrame renderMap() {
         // This function and this method should create the map and render it 
+        // Addd action listeners in here????
+        //This is the initial map thats created with 4 sections the user can chooser from? 
         GridLayout mapLayout = new GridLayout(0,2);
         JFrame mapFrame = new JFrame();  
         mapFrame.setLayout(mapLayout);

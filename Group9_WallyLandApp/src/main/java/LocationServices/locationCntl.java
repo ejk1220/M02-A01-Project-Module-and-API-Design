@@ -32,6 +32,10 @@ public class locationCntl {
         return locations;
     }
      
+     
+     //These JFrame methods are an attempt to create the seperate section frames for each 4 park sections 
+     //SHould this be in the locationUI??? 
+     //How to get this to change between frames, controller??????? 
      public JFrame parkSec1() {
           JTextField attraction1Field = new JTextField();
         JTextField attraction2Field = new JTextField();
