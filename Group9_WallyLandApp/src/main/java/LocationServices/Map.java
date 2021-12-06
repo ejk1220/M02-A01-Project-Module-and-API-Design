@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import javax.swing.JFrame;
 
 
-public class Map extends Attractions {
+public class Map {
     
     /**
      * This method is designed to set the basic visual properties of the WallyLand Map 

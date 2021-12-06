@@ -38,24 +38,8 @@ public class PortalCredentials {
         // update view on validation
         
         if (username.equals(visitorUser) ) {
-             validated = true;
-            
-           
-            
-       
+             validated = true;     
         
-       
-        //create buttons to change use cases 
-        //add action listener event for map grid
-        //Find out how to switch from the login cases to the location/statistics case 
-        //Should it be a grid with 4 different images with actionlisteners to determine mouse statefulness?? 
-        //Once the relevant section of the map is clicked it should show some basic info about the attraction
-        //Biggest thing is having a menu that lets you switch use cases 
-        //ASK THE PROF!!!!!!!
-        //Make this panel that appear to be a navigational panel!!!! 
-       
-           
-            
             System.out.println("Authentication successful");
         } else {
             System.out.println("Invalid credentials");
