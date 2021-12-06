@@ -1,5 +1,6 @@
 //THis controller should let you toggle view between each map section frame 
 //For example, after clicking on park section 1 you need a go back button and that will let you go back to the map 
+//The controller should be called to display the map and change between different map sections 
 
 
 package LocationServices;

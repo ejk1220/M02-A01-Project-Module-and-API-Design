@@ -1,7 +1,9 @@
 
 package LocationServices;
 
+import java.awt.GridLayout;
 import java.util.ArrayList;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 
 
@@ -9,50 +11,18 @@ public class Map {
     
     /**
      * This method is designed to set the basic visual properties of the WallyLand Map 
-     * @param title: String used to store the title of the map 
-     * @param subSections: ArrayList of Strings used to display the names of various map subsections
-     * @param attractionNames: ArrayList of Strings used to display the names of nearby attractions on the map
-     * @param attractionIcons: ArrayList of Icon objects used to display the relevant icon for the nearby attraction
      */
-    public static void setMapProperties(String title, ArrayList<String> subSections, 
-            ArrayList<String> attractionNames, ArrayList<Object> attractionIcons) {
-        /*
-        TODO: 
-        Implement settting functionality 
-        Define Icon object 
-        Is this where action listener functionality can be implemented? 
-        Map properties need to be a 4 by 4 grid with maybe an image for each
-        Each grid needs a seperate name and when clicked takes the user to another JFrame 
-        This new JFrame will show the user the park section information and attractions 
-        THIS CLASS SHOULD PRODUCE THE MAP ITSELF 
-        */
-        title = "WallyLand";
-        subSections.add("Section1");
-        subSections.add("Section2");
-        subSections.add("Section3");
-        attractionNames.add("Space Mountain");
-        attractionNames.add("Pirates of the Carribean");
-        attractionNames.add("Micky Mouse Clubhouse");
-        Object icon1 = "icon1"; 
-        Object icon2 = "icon2";
-        attractionIcons.add(icon1);
-        attractionIcons.add(icon2);
-         
-    }
     
-    /**
-     * This method renders the map with the properties defined in setMapProperties
-     * @return Returns a JFrame Object called mapFrame that renders the map and its features 
-     */
     public JFrame renderMap() {
-        /*
-        TODO: 
-        implement render map functionallity 
-        mapFrame = setMapProperties();   ??
-        */
-        JFrame mapFrame = new JFrame();
+        // This function and this method should create the map and render it 
+        GridLayout mapLayout = new GridLayout(0,2);
+        JFrame mapFrame = new JFrame();  
+        mapFrame.setLayout(mapLayout);
+        mapFrame.add(new JButton("Section 1"));
+        mapFrame.add(new JButton("Section 2"));
+        mapFrame.add(new JButton("Section 3"));
+        mapFrame.add(new JButton("Section 4"));
         return mapFrame;
     }
-    
     
 }

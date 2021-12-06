@@ -1,5 +1,6 @@
 //THis should produce each seperate park frame 
 // Try to use the fishing project/other last year projects as a comp 
+// Idk what to do with this class yet, is this the UI for the individual park sections once rendered? 
 package LocationServices;
 
 import java.awt.event.ActionEvent;
