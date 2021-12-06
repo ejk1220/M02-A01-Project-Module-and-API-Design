@@ -17,6 +17,8 @@ public class QueueCntl {
      * Constructor for the QuickServiceRestaurant
      */
     public QueueCntl() {
+        QueueUI = new QueueUI(this);
+        QueueUI.setVisible(true);
         status = "none";
     }
     
