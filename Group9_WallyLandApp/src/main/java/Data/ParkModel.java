@@ -22,7 +22,7 @@ public class ParkModel {
         private static List<String[]> displayList = new ArrayList<String[]>();
 //        private static ArrayList<String> info = new ArrayList<String>();
        
-        public static List<String[]> retrieveList(String display) {
+        public static List<String[]> retrieveList() {
             
         try {
             String file = "ride_data.txt";
@@ -32,9 +32,7 @@ public class ParkModel {
             while ((st = br.readLine()) != null) {
                 String[] line = st.split(", ");
 
-                if(display.equals(line[0])){
-                    displayList.add(line);
-                }            
+                         
             }
             
         } catch (IOException ioe) {
