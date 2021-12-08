@@ -20,6 +20,9 @@ public class locationUI extends JFrame  {
         initComponents();
     }
     
+    
+    // This method is trying to create a confirmation message upon selecting the correct park section 
+    //Once location is selected message appears asking for confirmation and the user can confirm to continue or deny to return 
     private void initComponents() {
         String location = JOptionPane.showInputDialog(null,"Enter your Park Section (Sections Numbers: 1,2,3,4)");
        int response = JOptionPane.showConfirmDialog(null, "Is this your location: "

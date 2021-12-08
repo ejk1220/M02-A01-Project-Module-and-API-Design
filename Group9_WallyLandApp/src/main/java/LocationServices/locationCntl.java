@@ -57,13 +57,11 @@ public class locationCntl {
         attractionListPanel.add(attraction4Field);
         section1frame.add(attractionListPanel);
         
-        attraction1Field.setText("Change to Read in from file");
-        attraction2Field.setText("Change to Read in from file");
-        attraction3Field.setText("Change to Read in from file");
-        attraction4Field.setText("Change to Read in from file");
-         
-         
-         
+        attraction1Field.setText("Attraction 1 Info");
+        attraction2Field.setText("Attraction 2 Info");
+        attraction3Field.setText("Attraction 3 Info");
+        attraction4Field.setText("Attraction 4 Info");
+          
          return section1frame;
      }
      
@@ -87,13 +85,12 @@ public class locationCntl {
         attractionListPanel.add(attraction4Field);
         section2frame.add(attractionListPanel);
         
-        attraction1Field.setText("Change to Read in from file");
-        attraction2Field.setText("Change to Read in from file");
-        attraction3Field.setText("Change to Read in from file");
-        attraction4Field.setText("Change to Read in from file");
+        attraction1Field.setText("Attraction 1 Info");
+        attraction2Field.setText("Attraction 2 Info");
+        attraction3Field.setText("Attraction 3 Info");
+        attraction4Field.setText("Attraction 4 Info");
         
         section2frame.setVisible(true);
-        
         
          return section2frame;
      }
@@ -118,10 +115,10 @@ public class locationCntl {
         attractionListPanel.add(attraction4Field);
         section3frame.add(attractionListPanel);
         
-        attraction1Field.setText("Change to Read in from file");
-        attraction2Field.setText("Change to Read in from file");
-        attraction3Field.setText("Change to Read in from file");
-        attraction4Field.setText("Change to Read in from file");
+        attraction1Field.setText("Attraction 1 Info");
+        attraction2Field.setText("Attraction 2 Info");
+        attraction3Field.setText("Attraction 3 Info");
+        attraction4Field.setText("Attraction 4 Info");
         
          return section3frame;
      }
@@ -144,12 +141,10 @@ public class locationCntl {
         attractionListPanel.add(attraction4Field);
         section4frame.add(attractionListPanel);
         
-        attraction1Field.setText("Change to Read in from file");
-        attraction2Field.setText("Change to Read in from file");
-        attraction3Field.setText("Change to Read in from file");
-        attraction4Field.setText("Change to Read in from file");
-        
-        
+        attraction1Field.setText("Attraction 1 Info");
+        attraction2Field.setText("Attraction 2 Info");
+        attraction3Field.setText("Attraction 3 Info");
+        attraction4Field.setText("Attraction 4 Info");
         
          return section4frame;
      }
