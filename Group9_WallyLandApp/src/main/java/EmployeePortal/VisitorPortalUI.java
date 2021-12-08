@@ -151,6 +151,10 @@ private UpdateQueueUI view;
 
             // closes current window
             formWindowClosed(evt);
+            //INject new portal in here 
+            //Create main menu use casess (Visitor main menu or whatever) 
+            //Should be able to switch between map and rides 
+            
             UpdateQueueCntl cntl = new UpdateQueueCntl();
             view = new UpdateQueueUI(cntl);
             view.setVisible(true);
