@@ -79,7 +79,7 @@ public class UpdateMapUI extends javax.swing.JDialog {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3)
@@ -99,7 +99,7 @@ public class UpdateMapUI extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 190, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 193, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING))
@@ -118,6 +118,8 @@ public class UpdateMapUI extends javax.swing.JDialog {
 
     private void Nexttbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nexttbutton2ActionPerformed
         // TODO add your handling code here:
+        //Create new frame or dialogue message in here that gives some basic information about the section 
+        //Update pictures to be smaller so they fit in the frame! 
     }//GEN-LAST:event_Nexttbutton2ActionPerformed
 
     private void NextButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextButton3ActionPerformed
