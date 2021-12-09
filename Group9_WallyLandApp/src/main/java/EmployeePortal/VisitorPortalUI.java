@@ -5,6 +5,7 @@
  */
 package EmployeePortal;
 
+import LocationServices.WallyMap;
 import java.awt.Component;
 import javax.swing.JOptionPane;
 
@@ -155,9 +156,15 @@ private UpdateQueueUI view;
             //Create main menu use casess (Visitor main menu or whatever) 
             //Should be able to switch between map and rides 
             
+             
+             WallyMap wm = new WallyMap(this, true);   
+           wm.setVisible(true);
+            
+            /*
             UpdateQueueCntl cntl = new UpdateQueueCntl();
             view = new UpdateQueueUI(cntl);
             view.setVisible(true);
+             */
         } else {
             // show message for invalid credentials
             Component frame = null;
