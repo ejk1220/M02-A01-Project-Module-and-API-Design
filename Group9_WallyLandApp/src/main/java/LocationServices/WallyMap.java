@@ -13,6 +13,7 @@ public class WallyMap extends javax.swing.JFrame {
     private UpdateQueueUI view;
     UpdateQueueCntl cntl = new UpdateQueueCntl();
     private final UpdateMapUI mapUI;
+    
     //Create Park Section UI so we can use something similar to mapUI to set the new park sections visible to true!! 
     
             
@@ -25,6 +26,7 @@ public class WallyMap extends javax.swing.JFrame {
         initComponents();
         view = new UpdateQueueUI(cntl);
         mapUI = new UpdateMapUI(this, true);
+        
     }
 
     /**

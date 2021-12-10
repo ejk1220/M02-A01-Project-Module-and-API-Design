@@ -5,6 +5,8 @@
  */
 package LocationServices;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Evan
@@ -37,44 +39,55 @@ public class UpdateMapUI extends javax.swing.JDialog {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setText("Section 1");
+        jLabel1.setText("Section 1: Wally Castle");
 
-        jLabel2.setText("Section 2");
+        jLabel2.setText("Section 2: Pirate Adventure");
 
-        jLabel3.setText("Section 3");
+        jLabel3.setText("Section 3: Food Court");
 
-        jLabel4.setText("Section 4");
+        jLabel4.setText("Section 4: Space Mountain");
 
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Nexttbutton2ActionPerformed(evt);
+                PiratesButtonActionPerformed(evt);
             }
         });
 
         jButton2.setText("Next");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NextButton3ActionPerformed(evt);
+                FoodCourtActionPerformed(evt);
             }
         });
 
         jButton3.setText("Next");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Nextbutton1ActionPerformed(evt);
+                CastleButtonActionPerformed(evt);
             }
         });
 
         jButton4.setText("Next");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NextButton4ActionPerformed(evt);
+                SpaceMountainActionPerformed(evt);
             }
         });
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PiratesofCar.jpg"))); // NOI18N
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/ParkFoodSectionICompressed.png"))); // NOI18N
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/SpaceMountainCompressed.png"))); // NOI18N
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/disneylandPixelCropped.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -82,20 +95,28 @@ public class UpdateMapUI extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2)
                     .addComponent(jLabel3)
-                    .addComponent(jButton3))
+                    .addComponent(jButton3)
+                    .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel4)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addContainerGap())))
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 275, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,17 +124,25 @@ public class UpdateMapUI extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
-                .addGap(172, 172, 172)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton4)))
@@ -122,22 +151,47 @@ public class UpdateMapUI extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Nexttbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nexttbutton2ActionPerformed
-        // TODO add your handling code here:
-        //Create JDialog box when clicking next! 
-    }//GEN-LAST:event_Nexttbutton2ActionPerformed
+    private void PiratesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PiratesButtonActionPerformed
 
-    private void NextButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NextButton3ActionPerformed
+       int response = JOptionPane.showConfirmDialog(null, "Confirm Section? "
+                , "Confirm",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+       if (response == JOptionPane.YES_OPTION) {
+           JOptionPane.showMessageDialog(new javax.swing.JFrame(), "Wallyland's pirate adventure section contains numerous pirate-themed attractions, an imax theatre, and even an entire treasure hunt!"
+                   + "This section of the park DOES NOT offer any dining options (see food court park section)");
+       }
+    }//GEN-LAST:event_PiratesButtonActionPerformed
 
-    private void Nextbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Nextbutton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Nextbutton1ActionPerformed
+    private void FoodCourtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FoodCourtActionPerformed
+     int response = JOptionPane.showConfirmDialog(null, "Confirm Section? "
+                , "Confirm",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+       if (response == JOptionPane.YES_OPTION) {
+           JOptionPane.showMessageDialog(new javax.swing.JFrame(), "Wallyland's food court offers a wide variety of dining options for the whole family! Whether its dine-in or take out Wallyland's food court has all kinds of grub to suit you and your family!"
+                   + "This section of the park DOES NOT hold any events (see Wally Castle section)");
+       }
+    }//GEN-LAST:event_FoodCourtActionPerformed
 
-    private void NextButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextButton4ActionPerformed
+    private void CastleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CastleButtonActionPerformed
+        int response = JOptionPane.showConfirmDialog(null, "Confirm Section? "
+                , "Confirm",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+       if (response == JOptionPane.YES_OPTION) {
+           JOptionPane.showMessageDialog(new javax.swing.JFrame(), "Wally Castle is massive, sprawling spectacle that the whole family will enjoy! Come see the Castle firework show every Friday at 9 PM!"
+                   + "This section of the park DOES NOT contain any rides (see Space Mountain Section)");
+       }
+    }//GEN-LAST:event_CastleButtonActionPerformed
+
+    private void SpaceMountainActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SpaceMountainActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NextButton4ActionPerformed
+        int response = JOptionPane.showConfirmDialog(null, "Confirm Section? "
+                , "Confirm",
+                JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+       if (response == JOptionPane.YES_OPTION) {
+           JOptionPane.showMessageDialog(new javax.swing.JFrame(), "Space Mountain is an adrenaline-lover's dream. Space Mountain is the largest section at WallyLand containing all park roller coasters and thrill rides!"
+                   + "This section of the park DOES NOT have any attractions other than thrill rides (for less-thrilling attractions see Pirate Adventure Section");
+       }
+    }//GEN-LAST:event_SpaceMountainActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,5 +245,8 @@ public class UpdateMapUI extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }
