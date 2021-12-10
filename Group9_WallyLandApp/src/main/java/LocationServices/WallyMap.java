@@ -1,6 +1,7 @@
 
 package LocationServices;
 
+import EmployeePortal.InitialPortalUI;
 import EmployeePortal.UpdateQueueCntl;
 import EmployeePortal.UpdateQueueUI;
 
@@ -108,7 +109,9 @@ public class WallyMap extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        System.out.println("Back button");
+        InitialPortalUI portalUI = new InitialPortalUI();
+        portalUI.setVisible(true);
+        formWindowClosed(evt);
        
         
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -123,6 +126,9 @@ public class WallyMap extends javax.swing.JFrame {
             view.setVisible(true);
     }//GEN-LAST:event_RidesButtonActionPerformed
 
+    private void formWindowClosed(java.awt.event.ActionEvent evt) {
+        dispose();
+    }
     /**
      * @param args the command line arguments
      */
