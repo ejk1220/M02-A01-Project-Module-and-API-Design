@@ -37,9 +37,8 @@ public class PortalCredentials {
         String validVisitor = "password";
         // update view on validation
         
-        if (username.equals(visitorUser) ) {
+        if (username.equals(visitorUser) || username.equals(validUser) ) {
              validated = true;     
-        
             System.out.println("Authentication successful");
         } else {
             System.out.println("Invalid credentials");
