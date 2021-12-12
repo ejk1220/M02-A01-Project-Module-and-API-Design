@@ -44,7 +44,7 @@ public class WallyMap extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFont(new java.awt.Font("Baskerville Old Face", 0, 10)); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
